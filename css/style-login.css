@@ -1,0 +1,76 @@
+body {
+    background: url(../assets/images/fondoLog.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  /* width y minheight de main-login */
+  .main-login {
+    height: 100vh;
+    min-height: 450px;
+  }
+  
+  /* styles form-container */
+  .form__container {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 50px var(--azul-dos);
+    background-color: #005ebeee;
+    border-radius: 5px;
+    width: 360px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    font-size: 1rem;
+    margin: 0px 15px;
+  }
+  .icon__login {
+    font-size: 100px;
+    color: white;
+  }
+  .form__campo {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 3px;
+    width: 80%;
+    padding: 8px;
+    margin: 0px 0px 20px 0px;
+  }
+  .form__campo::placeholder {
+    color: #fff5;
+    font-size: 0.8rem;
+  }
+  .form__campo:focus {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  .form__label {
+    width: 80%;
+    color: white;
+    text-align: left;
+  }
+  .form__button {
+    width: 80%;
+    padding: 8px;
+    background: white;
+    transition: all 0.3s;
+  }
+  .form__button:hover {
+    background-color: var(--azul-uno);
+    color: white;
+    font-weight: bolder;
+    box-shadow: 0px 0px 4px var(--azul-dos);
+    transform: translate(0px, -3px);
+  }
+  /* media para breakpoint */
+  @media (max-width: 576px) {
+    .form__container {
+      font-size: 0.8rem;
+    }
+  
+    .form__campo::placeholder {
+      font-size: 0.7rem;
+    }
+  }
+  
