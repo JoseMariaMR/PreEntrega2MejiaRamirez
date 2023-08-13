@@ -1,0 +1,44 @@
+:root {
+    --azul-uno: #0e18a9;
+    --azul-dos: #005ebe;
+    --azul-tres: #8bc6ff;
+  }
+  
+  * {
+    border: 0;
+    padding: 0;
+  
+    font-family: "Dosis", sans-serif;
+    box-sizing: border-box;
+  }
+  
+  /* navbar */
+  .navbar {
+    background-color: var(--azul-dos);
+    padding: 8px 10px;
+    font-size: 1rem;
+  }
+  .navbar img {
+    width: 30px;
+  }
+  
+  .navbar__enlaces ul {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+  }
+  
+  .navbar__enlaces ul li:last-child {
+    font-weight: bolder;
+    border: 1px solid #fff5;
+    border-radius: 10px;
+  }
+  .nav-item:hover a {
+    text-shadow: 0px 0px 5px #fff4;
+  }
+  
+  @media screen and (max-width: 720px) {
+    .navbar__enlaces ul li:last-child {
+      border: none;
+    }
+  }
