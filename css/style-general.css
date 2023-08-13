@@ -42,3 +42,62 @@
       border: none;
     }
   }
+
+
+  
+/* Footer */
+
+.footer {
+  background-color: var(--azul-dos);
+  color: white;
+  font-size: 0.8rem;
+  padding: 16px 10px;
+}
+.footer__row1 {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-between;
+  align-content: center;
+  padding: 5px 10px 16px 10px;
+  border-top: 1px solid #fff4;
+  color: white;
+}
+
+.footer__row2 {
+  text-align: center;
+}
+.footer__p {
+  padding: 4px;
+}
+.footer__div {
+  padding: none;
+  justify-content: center;
+}
+
+.footer__div img {
+  width: 40px;
+}
+
+.footer__ul {
+  justify-content: end;
+}
+.nav-link {
+  color: white;
+  padding: 4px 8px;
+}
+.nav-link:hover {
+  color: #000;
+}
+
+/* media para breackpoint footer*/
+@media (max-width: 767.98px) {
+  .footer__row1 {
+    gap: 16px;
+  }
+  .footer__p {
+    text-align: center;
+  }
+  .footer__ul {
+    justify-content: center;
+  }
+}
