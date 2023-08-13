@@ -44,6 +44,26 @@
   }
 
 
+/* estilos para titulos */
+.titulo {
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.titulo__h1,
+.titulo__h2 {
+  text-shadow: 0px 0px 5px;
+  color: var(--azul-uno);
+  text-align: center;
+}
+.titulo__div {
+  width: 50px;
+  box-shadow: 0px 0px 5px;
+  border: 1px solid var(--azul-uno);
+  top: -5px;
+}
+
   
 /* Footer */
 
