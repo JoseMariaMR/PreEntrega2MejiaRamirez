@@ -51,3 +51,38 @@
  transform: rotateY(0deg);
  
 } 
+/* section escribenos*/
+.escribenos__h2{
+    font-size: 1.3rem;
+    text-align: center;
+}
+/* Formulario */
+.form__contacto{
+    padding:10px 10%;
+}
+
+.legend{
+    font-size: .8rem;
+    margin-bottom: 0;
+}
+
+
+.form__contacto .btn{
+    padding: 8px;
+    min-width: 100px;
+    
+    transform: translate(0px, -3px);
+    transition: all .3s;
+}
+.form__contacto .btn:hover{
+    background-color:  var(--azul-uno);
+    color: white;
+    font-weight: bolder;
+    box-shadow: 0px 0px 4px var(--azul-dos);
+}
+
+@media (max-width:576.8px){
+    .form__contacto{
+        padding: 10px 3%;
+    }
+}

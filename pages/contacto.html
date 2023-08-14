@@ -79,6 +79,63 @@
           </div>
         </div>
       </section>
+    <!-- section escribenos -->
+    <section class="container escribenos">
+        <h2 class="border-top mt-4 py-3 px-1 escribenos__h2">
+          O si prefieres, dejanos tus datos y nos comunicamos contigo!
+        </h2>
+        <form class="container-fluid form__contacto">
+          <fieldset class="row">
+            <legend class="legend">Nombre y Tel&eacute;fono</legend>
+            <!-- nombre -->
+            <div class="input-group mb-3">
+              <span class="input-group-text">Nombre</span>
+              <input type="text" class="form-control" placeholder="Nombre(s)" maxlength="20" required />
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text">Apellido</span>
+              <input type="text" class="form-control" placeholder="Apellido(s)" maxlength="20" />
+            </div>
+            <!-- telefono -->
+            <div class="col-md-5">
+              <div class="input-group mb-3">
+                <span class="input-group-text">Tel&eacute;fono</span>
+                <input type="number" class="form-control" placeholder="Fijo / M&oacute;vil" required />
+              </div>
+            </div>
+          </fieldset>
+          <!-- Direccion -->
+          <fieldset class="row">
+            <legend class="legend">Direcci&oacute;n</legend>
+            <!-- calle y numero-->
+            <div class="col-md-7">
+              <div class="col-6 input-group mb-3">
+                <span class="input-group-text">Calle y N&uacute;mero</span>
+                <input type="text" class="form-control" maxlength="20" required />
+              </div>
+            </div>
+            <div class="col-md-5">
+              <!-- colonia -->
+              <div class="col-12 col-md-6 input-group mb-3">
+                <span class="input-group-text">Colonia</span>
+                <input type="text" class="form-control" maxlength="20" required />
+              </div>
+            </div>
+            <div class="col-md-7">
+              <!-- municipio -->
+              <div class="col-12 col-md-6 input-group mb-3">
+                <span class="input-group-text">Municipio</span>
+                <input type="text" class="form-control" maxlength="20" required />
+              </div>
+            </div>
+          </fieldset>
+          <!-- btn enviar -->
+  
+          <button type="submit" class="btn btn-primary mb-3 col-12">
+            Enviar
+          </button>
+        </form>
+      </section>
   </main>
   <!-- Footer -->
   <footer class="container-fluid footer">
