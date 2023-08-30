@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,41 +16,43 @@
   <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet" />
   <title>I-WIFI | Conectamos lo Importante</title>
 </head>
+
 <body id="start">
-        <!-- NAVBAR -->
-        <nav class="navbar navbar-expand-sm sticky-top navbar-dark">
-            <div class="container-fluid navbar__container">
-              <a class="navbar-brand" href="index.html">
-      
-                <img src="./assets/images/logo.png" alt="IwiFi" /></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
-                aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse navbar__enlaces" id="navbar">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-reset">
-                  <li class="nav-item">
-                    <a class="nav-link" href="./index.html#nosotros">Nosotros</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./index.html#planes">Planes</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./pages/contacto.html">Contacto</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./pages/contrata.html">Contrata</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-rese" href="./pages/login.html">Login</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-        </header>
-        <main>
-          <!-- Carousel  -->
+  <!-- NAVBAR -->
+  <header class="hedaer">
+    <nav class="navbar navbar-expand-sm sticky-top navbar-dark">
+      <div class="container-fluid navbar__container">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../assets/images/logo.png" alt="IwiFi" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+          aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse navbar__enlaces" id="navbar">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-reset">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html#nosotros">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html#planes">Planes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/contrata.html">Contrata</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-rese" href="../pages/login.html">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Carousel  -->
+  <main>
     <section class="section-carousel">
       <div id="carousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
@@ -242,36 +245,37 @@
       </article>
 
     </section>
-    
+  </main>
     <!-- Footer -->
-  <footer class="container-fluid footer">
-    <div class="row footer__row1">
-      <p class="col-md-5 row-12 mb-0 footer__p">&#169; 2023 I-Wifi Connect</p>
-      <div class="container justify-content-center d-flex col-md-2 row-12 footer__div">
-        <img src="./assets/images/logo.png" alt="iwifi" class="footer__img" />
+    <footer class="container-fluid footer">
+      <div class="row footer__row1">
+        <p class="col-md-5 row-12 mb-0 footer__p">&#169; 2023 I-Wifi Connect</p>
+        <div class="container justify-content-center d-flex col-md-2 row-12 footer__div">
+          <img src="./assets/images/logo.png" alt="iwifi" class="footer__img" />
+        </div>
+        <ul class="nav col-12 col-md-5 text-muted footer__ul">
+          <li class="nav-item text-muted">
+            <a href="./index.html#start" class="nav-link">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a href="./pages/contacto.html" class="nav-link">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a href="./pages/contrata.html" class="nav-link">Contrata</a>
+          </li>
+          <li class="nav-item">
+            <a href="./pages/login.html" class="nav-link">Login</a>
+          </li>
+        </ul>
       </div>
-      <ul class="nav col-12 col-md-5 text-muted footer__ul">
-        <li class="nav-item text-muted">
-          <a href="./index.html#start" class="nav-link">Inicio</a>
-        </li>
-        <li class="nav-item">
-          <a href="./pages/contacto.html" class="nav-link">Contacto</a>
-        </li>
-        <li class="nav-item">
-          <a href="./pages/contrata.html" class="nav-link">Contrata</a>
-        </li>
-        <li class="nav-item">
-          <a href="./pages/login.html" class="nav-link">Login</a>
-        </li>
-      </ul>
-    </div>
-    <p class="row-fluid text-dark align-items-center mb-0 footer__row2">
-      Para brindarle un mejor servicio contamos con soporte t&eacute;cnico de Lunes a
-      Viernes de 10:00am a 3:30pm y con soporte t&eacute;cnico telef&oacute;nico de Lunes a
-      Viernes de 10:00am a 6:30pm.
-    </p>
-  </footer>
-  <!-- JavaScript Bootstrap -->
-  <script src="./js/bootstrap.min.js"></script>
+      <p class="row-fluid text-dark align-items-center mb-0 footer__row2">
+        Para brindarle un mejor servicio contamos con soporte t&eacute;cnico de Lunes a
+        Viernes de 10:00am a 3:30pm y con soporte t&eacute;cnico telef&oacute;nico de Lunes a
+        Viernes de 10:00am a 6:30pm.
+      </p>
+    </footer>
+    <!-- JavaScript Bootstrap -->
+    <script src="./js/bootstrap.min.js"></script>
 </body>
+
 </html>
