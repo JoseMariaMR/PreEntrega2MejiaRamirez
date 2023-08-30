@@ -50,7 +50,9 @@
 .nosotros .c-nosotros__img {
   max-width: 350px;
   min-width: 200px;
-  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px black;
 }
 .nosotros .c-nosotros__p {
   width: 350px;
@@ -184,7 +186,9 @@
 .servicios .cards__img,
 .servicios .decide__img {
   max-width: 250px;
-  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px black;
 }
 .servicios .cards {
   display: flex;
@@ -400,6 +404,7 @@
 }
 .form__container .form__campo:focus {
   background-color: rgba(0, 0, 0, 0.2);
+  outline: none;
 }
 .form__container .form__label {
   width: 80%;
@@ -416,7 +421,7 @@
   background-color: #0e18a9;
   color: white;
   font-weight: bolder;
-  box-shadow: 0px 0px 4px #005ebe;
+  box-shadow: 0px 0px 4px;
   transform: translate(0px, -3px);
 }
 
