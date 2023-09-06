@@ -1,0 +1,23 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-areas: 
+    "titulo titulo"
+    "filtros catalogo";
+    border: 1px solid red;
+}
+
+.titulo{
+    grid-area: titulo;
+    border: 1px solid green;
+}
+
+.filtros{
+    grid-area: filtros;
+    border: 1p solid blue;
+}
+
+.catalogo{
+    grid-area: catalogo;
+    border: 1px solid pink;
+}
