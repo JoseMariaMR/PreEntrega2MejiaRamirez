@@ -4,20 +4,52 @@
     grid-template-areas: 
     "titulo titulo"
     "filtros catalogo";
-    border: 1px solid red;
 }
 
 .titulo{
     grid-area: titulo;
-    border: 1px solid green;
 }
 
 .filtros{
     grid-area: filtros;
-    border: 1p solid blue;
 }
 
 .catalogo{
     grid-area: catalogo;
-    border: 1px solid pink;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+    gap:10px
+}
+
+// Estilos para card-product
+
+.card-product{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    padding: 5px;
+    box-shadow: $box-shadow;
+
+    &:hover{
+        box-shadow: $box-shadow-hover;
+    }
+
+    .card-img img{
+        width: 100%;
+    }
+    .card-datos{
+        text-align: center;
+        padding-top: 15px;
+        border-top: 1px solid rgba(128, 128, 128, 0.526);
+        p{
+          text-shadow: 0px 0px 1px;  
+        }
+        h5{
+            color: $azul-uno;
+            text-shadow: 0px 0px 3px;
+        }
+    }
 }
