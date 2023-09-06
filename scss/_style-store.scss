@@ -1,55 +1,123 @@
-.grid-container{
-    display: grid;
-    grid-template-columns: 1fr 5fr;
-    grid-template-areas: 
-    "titulo titulo"
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  grid-template-areas:
+    "none titulo"
     "filtros catalogo";
+  background-color: rgb(234, 234, 234);
 }
 
-.titulo{
-    grid-area: titulo;
+.titulo {
+  grid-area: titulo;
+  color: $azul-uno;
+  padding: 5px;
+  h1 {
+    text-shadow: 0px 0px 4px;
+  }
 }
 
-.filtros{
-    grid-area: filtros;
-}
+.filtros {
+  grid-area: filtros;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  padding-top: 20px;
 
-.catalogo{
-    grid-area: catalogo;
+  .container-filtro {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 10px;
-    gap:10px
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .btn-filtro {
+    width: 100px;
+    font-size: 1.2rem;
+  }
+  .filtros__op {
+    width: 100%;
+    margin-top: 5px;
+  }
+}
+.list-filtros {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+  a {
+    text-decoration: none;
+  }
+}
+
+.catalogo {
+  grid-area: catalogo;
+  display: flex;
+  width: 98%;
+  height: 98%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 20px;
+  padding-bottom: 40px;
+  gap: 20px;
+  box-shadow: $box-shadow;
+  background-color: white;
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
 }
 
 // Estilos para card-product
 
-.card-product{
-    width: 250px;
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
+.card-product {
+  width: 250px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  padding: 5px;
+  box-shadow: $box-shadow;
+  transition: all 0.2s;
+
+  &:hover {
+    box-shadow: $box-shadow-hover;
+    box-shadow: inset 0px 0px 14px $azul-uno;
+  }
+
+  .card-img img {
+    width: 100%;
     padding: 5px;
-    box-shadow: $box-shadow;
+    height: 220px;
+  }
+  .card-datos {
+    text-align: center;
+    padding-top: 15px;
+    border-top: $border-store;
 
-    &:hover{
-        box-shadow: $box-shadow-hover;
+    p {
+      text-shadow: 0px 0px 1px;
     }
-
-    .card-img img{
-        width: 100%;
+    h5 {
+      font-size: 2rem;
+      color: $azul-uno;
+      text-shadow: 0px 0px 3px;
     }
-    .card-datos{
-        text-align: center;
-        padding-top: 15px;
-        border-top: 1px solid rgba(128, 128, 128, 0.526);
-        p{
-          text-shadow: 0px 0px 1px;  
-        }
-        h5{
-            color: $azul-uno;
-            text-shadow: 0px 0px 3px;
-        }
-    }
+  }
 }
+// media para grid responsive
+@media screen and (max-width: 700px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "titulo"
+      "filtros"
+      "catalogo";
+    background-color: rgb(234, 234, 234);
+  }
+  .filtros {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+// styles for store-product
+

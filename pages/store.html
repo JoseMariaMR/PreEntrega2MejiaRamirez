@@ -17,7 +17,7 @@
   <!-- ICONOS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
   <!-- meta description and keywords -->
-  <meta name="description" content="Ven y cononce los productos que tenemos en nuestra tienda física">
+  <meta name="description" content="Ven y cononce los productos que tenemos en nuestra tienda fisica">
   <meta name="keywords" content="WIFI, COMPRAR, PRODUCTOS, TIENDA, UBICACION IWIFI, SERVICIO DE INTERNET">
   <title>Tineda</title>
 </head>
@@ -48,6 +48,9 @@
               <a class="nav-link" href="../pages/contrata.html">Contrata</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="../pages/store.html">Tienda</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link text-rese" href="../pages/login.html">Login</a>
             </li>
           </ul>
@@ -56,98 +59,155 @@
     </nav>
   </header>
   <!-- Main -->
-  <main class="grid-container">
-    <div class="titulo">
-        <h1>Nuestros Productos</h1>
-        <p>Échale un vistazo a nuestros pdocutos que tenemos en venta en nuestra tienda física</p>
-    </div>
-    <div class="filtros">
-        <div class="filtros__cat"> 
-            <h4>Categoría</h4>
-        <ul>
-            <li><a href="#">Antenas</a></li>
-            <li><a href="#">Cables</a></li>
-            <li><a href="#">Periféricos</a></li>
-            <li><a href="#">Conectores</a></li>
-        </ul>
-    </div>
-    <div class="filtros__marca">
-        <h4>Marca</h4>
-        <ul>
-            <li><a href="#">Ubiquiti</a></li>
-            <li><a href="#">Steren</a></li>
-            <li><a href="#">Genérico</a></li>
-        </ul>
-    </div>
-    <div class="filtros__estado">
-        <h4>Estado</h4>
-        <ul>
-            <li><input type="checkbox">Nuevo</li>
-            <li><input type="checkbox">Usado</li>
-        </ul>
-    </div>
-    </div>
-    <!-- div catalogo -->
-    <div class="catalogo">
-      <!-- tarjetas de producto -->
-<div class="card-product">
-    <div class="card-img"><img src="../assets/images/lbm5.jpg" alt="LiteBeam M5"></div>
-    <div class="card-datos">
-        <h5>$1500</h5>
-        <p>Ubiquiti Litebeam M5 Airmax 23dbi, 5ghz, Lbem523</p>
-    </div>
-</div>
-<div class="card-product">
-  <div class="card-img"><img src="../assets/images/lbm5.jpg" alt="LiteBeam M5"></div>
-  <div class="card-datos">
-      <h5>$1500</h5>
-      <p>Ubiquiti Litebeam M5 Airmax 23dbi, 5ghz, Lbem523</p>
-  </div>
-</div>
-<div class="card-product">
-  <div class="card-img"><img src="../assets/images/lbm5.jpg" alt="LiteBeam M5"></div>
-  <div class="card-datos">
-      <h5>$1500</h5>
-      <p>Ubiquiti Litebeam M5 Airmax 23dbi, 5ghz, Lbem523</p>
-  </div>
-</div>
-<div class="card-product">
-  <div class="card-img"><img src="../assets/images/lbm5.jpg" alt="LiteBeam M5"></div>
-  <div class="card-datos">
-      <h5>$1500</h5>
-      <p>Ubiquiti Litebeam M5 Airmax 23dbi, 5ghz, Lbem523</p>
-  </div>
-</div>
-<div class="card-product">
-  <div class="card-img"><img src="../assets/images/lbm5.jpg" alt="LiteBeam M5"></div>
-  <div class="card-datos">
-      <h5>$1500</h5>
-      <p>Ubiquiti Litebeam M5 Airmax 23dbi, 5ghz, Lbem523</p>
-  </div>
-</div>
-<div class="card-product">
-  <div class="card-img"><img src="../assets/images/lbm5.jpg" alt="LiteBeam M5"></div>
-  <div class="card-datos">
-      <h5>$1500</h5>
-      <p>Ubiquiti Litebeam M5 Airmax 23dbi, 5ghz, Lbem523</p>
-  </div>
-</div>
-<div class="card-product">
-  <div class="card-img"><img src="../assets/images/lbm5.jpg" alt="LiteBeam M5"></div>
-  <div class="card-datos">
-      <h5>$1500</h5>
-      <p>Ubiquiti Litebeam M5 Airmax 23dbi, 5ghz, Lbem523</p>
-  </div>
-</div>
-<div class="card-product">
-  <div class="card-img"><img src="../assets/images/lbm5.jpg" alt="LiteBeam M5"></div>
-  <div class="card-datos">
-      <h5>$1500</h5>
-      <p>Ubiquiti Litebeam M5 Airmax 23dbi, 5ghz, Lbem523</p>
-  </div>
-</div>
+  <main>
+    <div class="grid-container">
 
+      <div class="titulo">
+        <h1>Nuestros Productos</h1>
+        <p>&Eacute;chale un vistazo a nuestros pdocutos que tenemos en venta en nuestra tienda f&iacute;sica</p>
+      </div>
+      <div class="filtros">
+        <!-- Filtro Categoria -->
+        <div class="container-filtro">
+          <button class="btn btn-primary btn-filtro" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapse-cat" aria-expanded="false">
+            Categor&iacute;a
+          </button>
+
+          <div class="collapse filtros__op" id="collapse-cat">
+            <div class="card card-body">
+              <ul class="list-filtros">
+                <li><a class="link-filtros" href="#">Antenas</a></li>
+                <li><a class="link-filtros" href="#">Cables</a></li>
+                <li><a class="link-filtros" href="#">Perif&eacute;ricos</a></li>
+                <li><a class="link-filtros" href="#">Conectores</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+        <!-- filtro marca -->
+        <div class="container-filtro">
+          <button class="btn btn-primary btn-filtro" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapse-mar" aria-expanded="false">
+            Marca
+          </button>
+
+          <div class="collapse filtros__op" id="collapse-mar">
+            <div class="card card-body">
+              <ul class="list-filtros">
+                <li><a class="link-filtros" href="#">Ubiquiti</a></li>
+                <li><a class="link-filtros" href="#">Steren</a></li>
+                <li><a class="link-filtros" href="#">Logitech</a></li>
+                <li><a class="link-filtros" href="#">Gen&eacute;rico</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+        <!-- Filtro estado -->
+        <div class="container-filtro">
+          <button class="btn btn-primary btn-filtro" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapse-est" aria-expanded="false">
+            Estado
+          </button>
+
+          <div class="collapse filtros__op" id="collapse-est">
+            <div class="card card-body">
+              <ul class="list-filtros">
+                <li><a class="link-filtros" href="#">Nuevo</a></li>
+                <li><a class="link-filtros" href="#">Usado</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- div catalogo -->
+      <div class="catalogo">
+        <!-- tarjetas de producto -->
+        <a href="../pages/store-product.html">
+          <div class="card-product">
+            <div class="card-img"><img src="../assets/images/lbm5.jpg" alt="LiteBeam M5"></div>
+            <div class="card-datos">
+              <h5>$1500</h5>
+              <p>Ubiquiti Litebeam M5 Airmax 23dbi, 5ghz, Lbem523</p>
+            </div>
+          </div>
+
+        </a>
+        <a href="#">
+          <div class="card-product">
+            <div class="card-img"><img src="../assets/images/hdmi.jpg" alt="Cable-HDMI"></div>
+            <div class="card-datos">
+              <h5>$150</h5>
+              <p>Cable HDMI 3m Steren 4k</p>
+            </div>
+          </div>
+
+        </a>
+        
+        <a href="#">
+        <div class="card-product">
+          <div class="card-img"><img src="../assets/images/cable-red.jpg" alt="Cable-red"></div>
+          <div class="card-datos">
+            <h5>$150</h5>
+            <p>Cable de red CAT-6 5m</p>
+          </div>
+        </div>
+        </a>
+        <a href="#">
+        <div class="card-product">
+          <div class="card-img"><img src="../assets/images/adaptador-ubiquiti-POE.jpg" alt="Adaptador-POE"></div>
+          <div class="card-datos">
+            <h5>$300</h5>
+            <p>Adaptador POE Ubiquiti 24-12 W</p>
+          </div>
+        </div>
+        </a>
+        <a href="#">
+        <div class="card-product">
+          <div class="card-img"><img src="../assets/images/litebeam-5ac.jpg" alt="LiteBeam-5ac"></div>
+          <div class="card-datos">
+            <h5>$2500</h5>
+            <p>Ubiquiti Litebeam 5ac Gen2 Lbe5acgen2</p>
+          </div>
+        </div>
+        </a>
+        <a href="#">
+        <div class="card-product">
+          <div class="card-img"><img src="../assets/images/mouse-teclado.jpg" alt="Kit-mouseTeclado"></div>
+          <div class="card-datos">
+            <h5>$1500</h5>
+            <p>Kit de teclado y mouse inal&aacute;mbrico Logitech MK235 Espa&ntilde;ol de color negro</p>
+          </div>
+        </div>
+        </a>
+        <a href="#">
+        <div class="card-product">
+          <div class="card-img"><img src="../assets/images/nanostation-loco.jpg" alt="LiteBeam NanoLoco"></div>
+          <div class="card-datos">
+            <h5>$1900</h5>
+            <p>Nanostation Airmax Loco5ac Cpe Hasta 450 Mbps No Incluye Poe</p>
+          </div>
+        </div>
+        </a>
+        <a href="#">
+        <div class="card-product">
+          <div class="card-img"><img src="../assets/images/rj45.jpg" alt="Conectores-rj45"></div>
+          <div class="card-datos">
+            <h5>$5</h5>
+            <p>Conector RJ-45 pieza</p>
+          </div>
+        </div>
+        </a>
+        
+
+      </div>
+      </a>
     </div>
+
   </main>
   <!-- Footer -->
   <footer class="container-fluid footer">
@@ -165,6 +225,9 @@
         </li>
         <li class="nav-item">
           <a href="../pages/contrata.html" class="nav-link">Contrata</a>
+        </li>
+        <li class="nav-item">
+          <a href="../pages/store.html" class="nav-link">Tienda</a>
         </li>
         <li class="nav-item">
           <a href="../pages/login.html" class="nav-link">Login</a>
