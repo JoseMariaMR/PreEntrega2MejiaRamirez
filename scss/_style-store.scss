@@ -60,7 +60,7 @@
   gap: 20px;
   box-shadow: $box-shadow;
   background-color: white;
-  a{
+  a {
     text-decoration: none;
     color: inherit;
   }
@@ -120,4 +120,121 @@
   }
 }
 // styles for store-product
+.container-producto {
+  margin: 5px;
+  padding:50px 5px 50px 5px ;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  justify-content: space-around;
+  align-items: center;
+  width: 98%;
+  margin: 0 auto;
+}
 
+.galery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  box-shadow: $box-shadow;
+  border-radius: 3px;
+  width:450px ;
+  min-width: 330px;
+  height: 500px;
+  row-gap: 20px;
+  .img-min {
+    width: 40px;
+    margin: 5px;
+    box-shadow: $box-shadow;
+    transition: all 0.2s;
+
+    &:hover {
+      box-shadow: $box-shadow-hover;
+    }
+
+    &:nth-child(1):hover ~ .img-zoom > img {
+      left: 0px;
+    }
+    &:nth-child(2):hover ~ .img-zoom > img {
+      left: -324px;
+    }
+    &:nth-child(3):hover ~ .img-zoom > img {
+      left: -650px;
+    }
+    &:nth-child(4):hover ~ .img-zoom > img {
+      left: -950px;
+    }
+    &:nth-child(5):hover ~ .img-zoom > img {
+      left: -1284px;
+    }
+  }
+
+  .img-zoom {
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    box-shadow: $box-shadow;
+    img {
+      height: 100%;
+      position: relative;
+    }
+  }
+}
+
+.information{
+    width:450px ;
+  min-width: 330px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  
+  border-radius: 3px;
+  box-shadow: $box-shadow;
+
+    .name{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+            color: $azul-uno;
+            text-shadow: 0px 0px 5px $azul-tres ;
+        h1{
+            font-size: 1rem;
+            
+        }
+        h2{
+            display: inline-block;
+            width: 150px;
+            font-size: 2rem;
+        }
+        h3{
+            display: inline-block;
+            padding: 5px;
+            font-size: 0.8rem;
+            text-shadow: none;
+            border: 1px solid;
+            border-radius: 5px;
+        }
+
+    }
+
+
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+
+    .list-group{
+        width: 100px;
+        border-radius: 0px;
+        li{
+            padding: 5px;
+        }
+    }
+}

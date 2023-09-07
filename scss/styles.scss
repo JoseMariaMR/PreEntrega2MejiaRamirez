@@ -10,8 +10,11 @@
   padding: 0;
   font-family: "Dosis", sans-serif;
   box-sizing: border-box;
+  
 }
-
+body{
+  min-width: 350px;
+}
 /* navbar */
 .navbar {
   background-color: $azul-dos;
