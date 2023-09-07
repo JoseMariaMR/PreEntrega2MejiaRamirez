@@ -484,8 +484,7 @@
 .catalogo {
   grid-area: catalogo;
   display: flex;
-  width: 98%;
-  height: 98%;
+  margin: 10px;
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 20px;
@@ -536,8 +535,11 @@
   .grid-container {
     display: grid;
     grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
     grid-template-areas: "titulo" "filtros" "catalogo";
     background-color: rgb(234, 234, 234);
+    padding: 1%;
   }
   .filtros {
     flex-direction: row;
