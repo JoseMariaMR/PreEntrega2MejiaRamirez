@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Boostrap -->
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <!-- Estilos CSS -->
@@ -68,7 +71,7 @@
     </header>
     <!-- Main -->
     <main class="d-flex justify-content-center main-login align-items-center">
-        <form class="form__container">
+        <form class="form__container" data-aos="zoom-out">
             <i class="bi bi-people icon__login"></i>
             <label class="form__label" for="usuario">Usuario</label>
             <input class="form__campo" type="text" id="usuario" placeholder="Ingrese su usuario" required />
@@ -112,6 +115,10 @@
   </footer>
   <!-- Script Bootstrap -->
   <script src="../js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 </body>
 

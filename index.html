@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- Boostrap -->
   <link rel="stylesheet" href="./css/bootstrap.min.css" />
   <!-- Estilos CSS -->
@@ -60,7 +62,7 @@
 
   <!-- Carousel  -->
   <main>
-    <section class="section-carousel">
+    <section class="section-carousel" >
       <div id="carousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -97,14 +99,14 @@
     </section>
 
     <!-- section nosotros -->
-    <section class="container-fluid pt-1 pb-4 border-bottom nosotros" id="nosotros">
+    <section class="container-fluid pt-1 pb-4 border-bottom nosotros" id="nosotros" >
 
       <!-- titulo nosotros -->
-      <div class="container-fluid py-4 px-1 titulo">
+      <div class="container-fluid py-4 px-1 titulo" data-aos="zoom-in">
         <h1 class="col titulo__h1">Nosotros</h1>
         <div class="m-auto titulo__div"></div>
       </div>
-      <div class="c-nosotros">
+      <div class="c-nosotros" data-aos="zoom-in">
         <img src="./assets/images/somos.jpg" alt="Imagen-Nosotros" class="c-nosotros__img">
         <p class="c-nosotros__p">Ofrecemos soluciones de conectividad a Internet en poblaciones Rurales e
           Industrializadas. En I-WiFi buscamos que todos los sectores de nuestra poblaci&oacute;n tengan acceso a
@@ -114,7 +116,7 @@
 
     </section>
     <!-- section planes -->
-    <section class="container-fluid section-planes">
+    <section class="container-fluid section-planes" data-aos="zoom-in">
 
       <!-- titulo planes -->
       <div class="container-fluid py-4 px-1 titulo" id="planes">
@@ -214,13 +216,13 @@
 
     </section>
     <!-- section servicios -->
-    <section class="servicios">
+    <section class="servicios" >
       <!-- titulo nosotros -->
-      <div class="container-fluid py-4 px-1 titulo">
+      <div class="container-fluid py-4 px-1 titulo" data-aos="zoom-in">
         <h2 class="col titulo__h2">M&aacute;s Servicios</h2>
         <div class="m-auto titulo__div"></div>
       </div>
-      <article class="cards border-bottom">
+      <article class="cards border-bottom" data-aos="fade-right">
         <img src="./assets/images/card.png" alt="Imagen-IwifiCards" class="cards__img">
         <div class="cards__div">
           <h2>I-Wifi Cards</h2>
@@ -231,7 +233,7 @@
         </div>
       </article>
 
-      <article class="decide">
+      <article class="decide" data-aos="fade-left">
         <img src="./assets/images//contrato.png" alt="Imagen-Decides" class="decide__img">
 
         <div class="decide__div">
@@ -286,6 +288,10 @@
   </footer>
   <!-- JavaScript Bootstrap -->
   <script src="./js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
